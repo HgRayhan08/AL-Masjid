@@ -1,0 +1,707 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+/* font-family: 'Signika', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+/* font-family: 'Secular One', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Manjari&display=swap');
+/* font-family: 'Manjari', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+:root{
+  --warfirst:#F05454;
+  --warsecond:#30475E;
+  --wartrid:#222831;
+  --warfourt:#DDDDDD;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+/* container soswmed dan jam */
+.container-sosmet{
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10%;
+}
+.wrapper-sosmet a{
+  color: black;
+}
+.wrapper-sosmet i{
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.wrapper-sosmet .fa-facebook:hover{
+  font-size: 25px;
+  color: #3b5998;
+}
+.wrapper-sosmet .fa-twitter:hover{
+  font-size: 25px;
+  color: #1da1f2;
+}
+.wrapper-sosmet .fa-youtube:hover{
+  font-size: 25px;
+  color: #ff0000;
+}
+.wrapper-sosmet .fa-brands{
+  font-size: 20px;
+}
+.container-waktu{
+  display: flex;
+  padding: 10px 5px;
+  margin: 5px 0;
+  background-color: var(--wartrid);
+  border-radius: 25px;
+  color: white;
+  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5);
+}
+.container-waktu #jam,#keterangan{
+  margin: 0 10px;
+}
+.container-waktu #keterangan{
+  display: flex;
+  align-items: center;
+}
+#jam h1{
+  font-family: 'Secular One', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+}
+#keterangan h1{
+  font-family: 'Secular One', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+}
+/* container navbar */
+.container-navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10%;
+  background-color: var(--warfourt);
+}
+.container-navbar h2{
+  font-size: 30px;
+  color: var(--warfirst);
+  font-family: 'Secular One', sans-serif;
+  text-shadow: 2px 2px 2px #222831 ;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul{
+  display: flex;
+}
+nav li{
+  list-style: none;  
+  margin: 0 5px;
+}
+nav li a{
+  padding: 10px;
+  font-size: 15px;
+  text-decoration: none;
+  font-family: 'Signika', sans-serif;
+  font-weight:400;
+  color: var(--wartrid);
+  font-weight: normal;
+}
+
+nav li a:hover{
+  padding: 5px 10px;
+  color: var(--warfourt);
+  background-color: var(--warfirst);
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* container page informasi */
+.page{
+  position: absolute;
+  width: 50%;
+  margin: 20px 0 30px 0;
+  padding: 15px 30px 15px 15%;  
+  background-color: var(--warsecond);
+  border-radius: 0 100px 100px 0;
+  border-bottom: 2px solid #F05454;
+  border-right: 2px solid #F05454;
+  box-shadow: 0 5px 10px 2px rgba(247, 48, 48, 0.705);
+} 
+.page h1{
+  font-size: 25px;
+  color: var(--warfourt);
+  font-family: 'Signika', sans-serif;
+  font-weight: bold;
+}
+
+
+/*  */
+/* Halaman Index */
+/*  */
+
+.container-cover{
+  height: 90vh;
+  display: flex;
+  background-image: url("../img/BackgroundPutih.jpg");
+  background-position: center;
+  background-size: cover;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15%  10% 10%;
+  border-radius: 0 0 10px 10px;
+}
+.container-cover .cover img{
+  width: 120%;
+}
+.container-cover .kalimat{
+  width: 400px;
+}
+.container-cover .kalimat h1{
+  font-size: 90px;
+  font-family: 'Secular One', sans-serif;
+  color: var(--wartrid);
+  text-shadow: 3px 3px 2px #F05454 ;
+}
+
+/* main main */
+
+#main-Index{
+  display: flex;
+  justify-content: center;
+}
+/* kegiatan main */
+.container-kegiatan{
+  background-color: var(--wartrid);
+  box-shadow: 0 4px 7px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  padding: 20px;
+  position:absolute;
+  width: 900px;
+  transform: translate(0,-50%);
+}
+
+.icon-kegiatan{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container-kegiatan i{
+  padding: 30px;
+  color: var(--warfourt);
+  border: 3px solid white;
+  border-radius: 50%;
+}
+.item-kegiatan h1{
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10px;
+  color: var(--warfourt);
+  font-family: 'Manjari', sans-serif;
+}
+
+/* Ulasan masjid */
+
+.container-Ulasan{
+  height: 100%;
+  width: 100%;
+  padding-top: 200px;
+  padding-bottom: 30px;
+  background-color: var(--warfourt);
+}
+.container-Ulasan h1{
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Signika', sans-serif;
+}
+.wrapper-ulasan{
+  display: flex;
+  justify-content: center;
+}
+.item-ulasan{
+  background-color: var(--warsecond);
+  width: 30%;
+  margin: 0 10px;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  border-radius: 15px;
+  border: 4px solid #F05454;
+}
+
+.item-ulasan p{
+  border-bottom: 2px solid white;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* footer */
+.data-Footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #EFF5F5;
+  padding: 30px 0 ;
+}
+.footer-masjid img{
+  width: 100px;
+}
+.footer-masjid p{
+  font-family: 'Roboto', sans-serif;
+}
+.container-alamat h2,.container-form h2{
+  font-family: 'Manjari', sans-serif;
+}
+.container-alamat{
+  width: 300px;
+}
+.container-alamat p{
+  font-family: 'Roboto', sans-serif;
+}
+form{
+  display: flex;
+  flex-direction: column;
+}
+#input-Name{
+  width: 200px;
+  border-radius: 5px;
+  padding: 5px;
+}
+#input-Email{
+  width: 250px;
+  border-radius: 5px;
+  padding: 5px;
+}
+#input-message{
+  width: 300px;
+  height: 100px;
+  border-radius: 5px;
+}
+#btn-submit{
+  width: 100px;
+  padding: 5px;
+  margin-top: 10px;
+}
+#copyright{
+  border-top: 1px solid black;
+  text-align: center;
+  background-color:#EFF5F5;
+  padding: 5px 0;
+  color: black;
+}
+
+/*  */
+/* Halaman Tentang Kami */
+/*  */
+
+/* Slide */
+.mySlides {display: none;}
+img {vertical-align: middle;
+}
+.container-slide{
+  display: flex;
+  justify-content: center;
+  padding: 120px 0 30px;
+  background-image: url("../img/backgroundAbout.png");
+  background-size:cover;
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+}
+.wrapper-Slide{
+  width: 650px;
+  height: 500px;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.container-dot{
+  text-align: center;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/* container article */
+.container-article{
+  padding-top: 60px;
+  background-color: var(--warsecond);
+}
+.wrapper-masjid{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+  
+}
+.container-sejarah{
+  display: flex;
+  align-items: flex-start;
+}
+.container-article h1{
+  width: 300px;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Secular One', sans-serif;
+  color: var(--warsecond);
+  background-color: var(--warfourt);
+  border-radius: 20px;
+  border-bottom: 3px solid black;
+  border-right: 2px solid black;
+  box-shadow: 0 7px 10px 2px rgba(0,0,0,0.5);
+ 
+}
+.wrapper-sejarah{
+  margin: 0 35px 0 20px;
+  padding-bottom: 70px;
+  text-align: justify;
+}
+.wrapper-sejarah p{
+  font-size: 15px;
+  text-indent: 5em;
+  color:var(--warfourt);
+  font-family: 'Roboto', sans-serif;
+}
+/* container-video */
+.container-video{
+  padding: 0 30px 30px;
+}
+.container-video iframe{
+  width: 600px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+/*  */
+/* Halaman Jadwal Sholat */
+/*  */
+
+.container-jadwal{
+  padding: 120px 0 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/BackgroundJadwal.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wrapper-judulJadwal{
+    margin: 20px 0;
+    text-align: center;
+}
+.wrapper-judulJadwal h1{
+  font-size: 40px;
+  font-family: 'Secular One', sans-serif;
+}
+.wrapper-judulJadwal h3{
+  font-size: 30px;
+  font-weight: normal;
+  font-family: 'Secular One', sans-serif;
+
+}
+
+table, th,td{
+  border: 2px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+th{
+  background-color: var(--warsecond);
+  color: var(--warfourt);
+}
+td{
+  font-size: 18px;
+  font-weight: bold;
+  background-color: var(--warfourt);
+  color: var(--warsecond);
+}
+
+/*  */
+/* Halaman Agenda */
+/*  */
+
+#main-agenda{
+  padding-bottom: 30px;
+  background-image: url("../img/bacgroundAgenda.jpg");
+}
+
+.contaniner-Agenda{
+  padding-top: 120px;
+  padding-bottom: 30px;
+}
+.item-agenda{
+  display: flex;
+  padding: 10px;
+  margin: 15px 30% 10px 5%;
+  border-radius: 10px;
+  border-bottom: 3px solid black;
+  border-right: 2px solid black;
+  box-shadow: 0 7px 10px 2px rgba(0,0,0,0.5);
+  background-color: white;
+}
+.item-agenda img{
+  width: 400px;
+}
+.wrapper-agenda{
+  margin-left: 20px;
+}
+.item-agenda h2{
+  font-family: 'Signika', sans-serif;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.item-agenda p{
+  margin-top: 5px;
+  font-family: 'Manjari', sans-serif;
+}
+.item-agenda button{
+  margin: 15px 0 ;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  background-color: var(--warfirst);
+  border: none;
+  border-radius: 5px;
+}
+.item-agenda button:hover{
+  background-color: #fc7e7e;
+}
+.item-more{
+  display: flex;
+  justify-content: center;
+}
+.item-more a{
+  text-decoration: none;
+  color: var(--warfourt);
+  width: 100px;
+  padding: 10px;
+  text-align: center;
+  background-color: var(--wartrid);
+  border-radius: 10px;
+}
+
+/*  */
+/* Responsif all Page */
+/*  */
+
+@media(max-width:800px){
+   
+  /*  */
+  /* Header */
+  /*  */
+  
+  /* container jam */
+  .container-sosmet{
+    flex-direction:column-reverse;  
+    margin: 5px;  
+  }
+  .wrapper-sosmet{
+    margin-top: 10px;
+  }
+
+  /* navbar */
+  .container-navbar{
+    flex-direction: column;
+  }
+  /*  */
+  /* Main Index */
+  /*  */
+  .container-cover{
+    height: 85vh;
+    padding-top: 0;
+    padding-bottom: 0;
+    flex-direction:column;
+    align-items: flex-start;
+    justify-content:start;
+    background-size: cover;
+  }
+  /* .container-cover .cover img{
+    width: 200px;
+  } */
+  .container-cover .kalimat{
+    width: 100%;
+  }
+  .container-cover .kalimat h1{
+    font-size: 38px;
+    text-align: center;
+  }
+  .container-kegiatan{
+    text-align: center;
+    width: 300px;
+    height: 35vh;
+    justify-content: space-between;
+  }
+  .item-kegiatan{
+    margin:10px;
+  }
+  .item-kegiatan .fa-solid{
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .item-kegiatan h1{
+    font-size: 15px
+  }
+  .container-Ulasan h1{
+    font-size: 35px;
+  }
+  .wrapper-ulasan{
+    flex-direction: column;
+    align-items: center;
+  }
+  .item-ulasan{
+    width: 80%;
+    margin: 5px 0;
+  }
+  .item-ulasan p{
+    font-size: 12px;
+  }
+  .item-ulasan h2{
+    font-size: 20px
+  }
+
+  /* footer */
+  .footer-masjid{
+    margin: 10px 0;
+  }
+  .container-alamat{
+    margin: 15px 0;
+  }
+  .container-form{
+    margin-top: 10px;
+  }
+
+  /*  */
+  /* Halaman About */
+  /*  */
+  .page h1{
+    font-size: 20px;
+  }
+  .wrapper-Slide{
+    width: 350px;
+    height: auto;
+  }
+  .wrapper-masjid{
+    margin-bottom: 30px ;
+  }
+  .wrapper-masjid h1{
+    font-size: 25px;
+  }
+  .container-sejarah{
+    flex-direction: column-reverse;
+  }
+  .wrapper-sejarah{
+    padding-bottom: 30px;
+  }
+  .wrapper-sejarah p{
+    font-size: 12px;
+    text-indent: 2em;
+  }
+  .container-video{
+    padding: 0 20px 10px;
+  }
+  .container-video iframe{
+    width: 350px;
+    height: 250px;
+  }
+
+  /*  */
+  /* Halaman Jadwal sholat */
+  /*  */
+  .container-jadwal{
+    padding-top:100px ;
+  }
+  .container-jadwal h1{
+    margin-top: 5px;
+    font-size: 30px;
+  }
+  th,td{
+    font-size: 15px;
+    padding: 5px;
+  }
+  /*  */
+  /* Halaman Agenda */
+  /*  */
+
+  .contaniner-Agenda{
+    padding-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .item-agenda{
+    flex-direction: column;
+    margin: 10px 10px;
+    align-items: center;
+  }
+  .item-agenda img{
+    width: 70%;
+  }
+  .wrapper-agenda h2{
+    font-size: 20px;
+  }
+  .wrapper-agenda p{
+    font-size: 14px;
+  }
+  .item-more h5{
+    font-size: 13px;
+  }
+}
